@@ -61,7 +61,7 @@ export default function HomeContent() {
                     </div>
                 </div>
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-center justify-center max-w-[2000px] gap-2">
-                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                         <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
                             <Image src="/stock1.png" alt="stock1" fill objectFit="cover" />
                         </div>
@@ -70,7 +70,7 @@ export default function HomeContent() {
                             <p className="font-medium tracking-tight text-lg">$60</p>
                         </div>
                     </div>
-                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                         <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
                             <Image src="/stock2.png" alt="stock2" fill objectFit="cover" />
                         </div>
@@ -79,7 +79,7 @@ export default function HomeContent() {
                             <p className="font-medium tracking-tight text-lg">$80</p>
                         </div>
                     </div>
-                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                         <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
                             <Image src="/stock3.png" alt="stock3" fill objectFit="cover" />
                         </div>
@@ -88,7 +88,7 @@ export default function HomeContent() {
                             <p className="font-medium tracking-tight text-lg">$120</p>
                         </div>
                     </div>
-                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                         <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
                             <Image src="/stock4.png" alt="stock4" fill objectFit="cover" />
                         </div>
