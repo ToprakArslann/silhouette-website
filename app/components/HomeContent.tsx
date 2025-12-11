@@ -1,12 +1,14 @@
 "use client"
 import UnicornScene from "unicornstudio-react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronRight } from "lucide-react";
 import IntroOverlay from "./IntroOverlay";
 import Navbar from "./navbar";
 import { geistSans } from "../layout";
 import Image from "next/image";
 
 export default function HomeContent() {
+
+    const silhouette = "SILHOUETTE.";
     return (
         <main className={`w-full flex flex-col ${geistSans.className}`}>
 
@@ -68,7 +70,7 @@ export default function HomeContent() {
                             <p className="font-medium tracking-tight text-lg">$60</p>
                         </div>
                     </div>
-                    <div className="w-full h-full flex flex-col items-center justify-center">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
                         <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
                             <Image src="/stock2.png" alt="stock2" fill objectFit="cover" />
                         </div>
@@ -77,7 +79,7 @@ export default function HomeContent() {
                             <p className="font-medium tracking-tight text-lg">$80</p>
                         </div>
                     </div>
-                    <div className="w-full h-full flex flex-col items-center justify-center">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
                         <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
                             <Image src="/stock3.png" alt="stock3" fill objectFit="cover" />
                         </div>
@@ -86,7 +88,7 @@ export default function HomeContent() {
                             <p className="font-medium tracking-tight text-lg">$120</p>
                         </div>
                     </div>
-                    <div className="w-full h-full flex flex-col items-center justify-center">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
                         <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
                             <Image src="/stock4.png" alt="stock4" fill objectFit="cover" />
                         </div>
@@ -98,7 +100,31 @@ export default function HomeContent() {
 
                 </div>
             </div>
-            <div></div>
+            <div className="pt-50 w-full flex flex-row items-center justify-center text-[15vw]/20 md:text-[15vw]/60">
+                <p className="">{silhouette.split("").map((char, index) => <span key={index}>{char}</span>)}</p>
+            </div>
+            <div className="w-full px-40 py-20 flex flex-col gap-2">
+                <div>
+                    <h2 className="text-5xl font-bold tracking-tight uppercase">Join the Silence.</h2>
+                    <p className="text-lg font-medium tracking-tight">Subscribe for classified drops, secret sales, and <br /> raw data transmission. No spam, only signals.</p>
+                </div>
+                <div className="flex flex-row h-12">
+                    <div className="w-90 h-full bg-white flex items-center justify-center pl-2 border border-gray-400">
+                        <ChevronRight size={24} />
+                        <input type="text" placeholder="Enter your email" className="w-full h-full bg-white outline-none" />
+                    </div>
+                    <div className="h-full bg-black text-white flex items-center justify-center px-4 text-lg font-medium uppercase tracking-tight hover:cursor-pointer">Subscribe</div>
+                </div>
+                <p className="text-sm font-medium tracking-tight">BY SUBSCRIBING YOU AGREE TO OUR TERM OF SERVICE.</p>
+            </div>
+            <div className="p-2 flex flex-col">
+                <h2 className="text-xl font-bold tracking-tight uppercase">Silhouette.</h2>
+                <div className="pt-10 flex flex-col text-sm font-medium tracking-tight">
+                    <p>EST. 2025</p>
+                    <p>TURKIYE / WORLDWIDE</p>
+                    <p>SILHOUETTE_CORP ©</p>
+                </div>
+            </div>
         </main>
     );
 }
