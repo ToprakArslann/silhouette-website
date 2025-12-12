@@ -23,7 +23,7 @@ export default function Products() {
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-center justify-center max-w-[2000px] gap-2">
                 <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                     <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
-                        <Image src="/stock1.png" alt="stock1" fill objectFit="cover" />
+                        <Image src="/stock1.png" alt="stock1" fill className="object-cover" />
                     </div>
                     <div className="w-full flex items-center justify-center flex-col">
                         <h2 className="font-medium tracking-tight text-lg">[ SIL-TEE-001-SND ]</h2>
@@ -32,7 +32,7 @@ export default function Products() {
                 </div>
                 <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                     <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
-                        <Image src="/stock2.png" alt="stock2" fill objectFit="cover" />
+                        <Image src="/stock2.png" alt="stock2" fill className="object-cover" />
                     </div>
                     <div className="w-full flex items-center justify-center flex-col">
                         <h2 className="font-medium tracking-tight text-lg">[ SIL-OUT-002-OLV ]</h2>
@@ -41,7 +41,7 @@ export default function Products() {
                 </div>
                 <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                     <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
-                        <Image src="/stock3.png" alt="stock3" fill objectFit="cover" />
+                        <Image src="/stock3.png" alt="stock3" fill className="object-cover" />
                     </div>
                     <div className="w-full flex items-center justify-center flex-col">
                         <h2 className="font-medium tracking-tight text-lg">[ SIL-FTR-003-BNE ]</h2>
@@ -50,7 +50,7 @@ export default function Products() {
                 </div>
                 <div className="w-full h-full flex flex-col items-center justify-center gap-2 hover:cursor-pointer">
                     <div className="w-full h-[400px] 2xl:h-[600px] flex items-center justify-center overflow-hidden relative">
-                        <Image src="/stock4.png" alt="stock4" fill objectFit="cover" />
+                        <Image src="/stock4.png" alt="stock4" fill className="object-cover" />
                     </div>
                     <div className="w-full flex items-center justify-center flex-col">
                         <h2 className="font-medium tracking-tight text-lg">[ SIL-TOP-004-ANT ]</h2>
