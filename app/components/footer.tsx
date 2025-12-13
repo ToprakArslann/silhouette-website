@@ -1,11 +1,31 @@
 import { ChevronRight } from "lucide-react";
+import { useScroll, useTransform, motion } from "motion/react";
 
 export default function Footer() {
     const silhouette = "SILHOUETTE";
+    const { scrollYProgress } = useScroll();
+
+    const y7 = useTransform(scrollYProgress, [0.6, 1], [0, -30]);
+    const y8 = useTransform(scrollYProgress, [0.6, 1], [0, -60]);
+    const y9 = useTransform(scrollYProgress, [0.6, 1], [0, -90]);
+
     return (
         <footer>
             <div className="pt-50 w-full flex flex-row items-center justify-center text-[15vw]/20 md:text-[15vw]/60">
-                <p className="">{silhouette.split("").map((char, index) => <span key={index}>{char}</span>)}</p>
+                <p className="">
+                    {silhouette.split("").map((char, index) => {
+                        let yValue;
+                        if (index === 7) yValue = y7;
+                        if (index === 8) yValue = y8;
+                        if (index === 9) yValue = y9;
+
+                        return (
+                            <motion.span key={index} style={{ y: yValue }} className="inline-block">
+                                {char}
+                            </motion.span>
+                        );
+                    })}
+                </p>
             </div>
             <div className="w-full px-6 py-10 md:px-40 md:py-20 flex flex-col gap-2 bg-[#0081F7]">
                 <div>
